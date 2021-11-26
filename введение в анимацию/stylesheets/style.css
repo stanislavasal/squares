@@ -1,0 +1,101 @@
+.paragraf{
+  position: absolute;
+  top:830px;
+}
+
+.animat1{
+  width: 100px;
+  height: 100px;
+  background-color: #ff4d00;
+  animation-name: anim1;
+  animation-duration: 3s;
+  transition: all 0.8s;
+}
+
+.animat1:hover{
+  background-color: #add8e6;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.animat11{
+  width: 100px;
+  height: 100px;
+  background-color: #6a5acd;
+  animation-name: anim11;
+  animation-duration: 4s;
+  transition: all 0.8s;
+}
+
+.animat11:hover{
+  background-color: #add8e6;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.animat3{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #7fffd4;
+  animation: anim3 4s infinite;
+}
+
+.animat41{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:530px;
+  background-color: #7fffd4;
+  animation-name: anim4;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animat5{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:880px;
+  animation-name: anim5;
+  animation-iteration-count: 2;
+  animation-duration: 2s;
+  animation-direction: reverse;
+  /* animation-direction: alternate;
+  animation-direction:  alternate-reverse; */
+  background-color: #add8e6;
+}
+
+@keyframes anim1 {
+  form {background-color: #ff4d00;}
+  to {background-color: #957b8d; border-radius: 50%;}
+}
+
+@keyframes anim11 {
+  0% {background-color: #6a5acd;}
+  25% {background-color: #924e7d; border-radius: 15%;}
+  50% {background-color: #ffcbdb; border-radius: 30%;}
+  75% {background-color: #eb4c42; border-radius: 50%;}
+}
+@keyframes anim3 {
+  0% {background-color: #7fffd4; left: 0px;}
+  20% {background-color: #002800; left: 200px; border-radius: 40%;}
+  40% {background-color: #002800; left: 0px; border-radius: 0%;}
+  60% {background-color: #641349; left: 200px; border-radius: 40%;}
+  80% {background-color: #d84b20; left: 0px; border-radius: 0%;}
+}
+
+@keyframes anim4 {
+  0% {background-color: #7fffd4; left: 0px; top: 530px;}
+  25% {background-color: #002800; left: 200px; top: 530px; border-radius: 40%;}
+  50% {background-color: #641349; left: 200px; top: 730px; border-radius: 0%;}
+  75% {background-color: #d84b20; left: 0px; top: 730px; border-radius: 40%;}
+}
+
+@keyframes anim5{
+ 0% {background-color: #add8e6; left: 0px; top: 880px;}
+ 25% {background-color: #add8e6; left: 200px; top: 880px;}
+ 50% {background-color: #add8e6; left: 200px; top: 1080px;}
+ 70% {background-color: #add8e6; left: 0px; top: 1080px;}
+}
